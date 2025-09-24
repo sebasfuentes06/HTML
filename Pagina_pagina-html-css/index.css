@@ -1,0 +1,209 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Colores principales */
+:root {
+  --primary: #0077b6;
+  --secondary: #00b4d8;
+  --accent: #90e0ef;
+  --dark: #03045e;
+  --light: #f8f9fa;
+}
+
+/* Estructura general */
+body {
+  background-color: var(--light);
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ====== HEADER ====== */
+header {
+  background: var(--dark);
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: var(--accent);
+}
+
+/* ====== HERO ====== */
+#hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://source.unsplash.com/1600x800/?clean,home') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+#hero h4 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#hero button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--secondary);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#hero button:hover {
+  background: var(--accent);
+  color: var(--dark);
+}
+
+/* ====== SERVICIOS ====== */
+#Nuestros\ Servicios {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#Nuestros\ Servicios h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+#Nuestros\ Servicios .accent {
+  color: var(--secondary);
+}
+
+.carta {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.carta:hover {
+  transform: translateY(-5px);
+}
+
+.carta h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* ====== POR QUÉ ELEGIRNOS ====== */
+#¿Porque \ elegirnos {
+  padding: 60px 20px;
+  background: var(--light);
+}
+
+#¿Porque \ elegirnos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Grid de beneficios */
+#¿Porque \ elegirnos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+#¿Porque \ elegirnos .grid div {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+#¿Porque \ elegirnos  .grid div:hover {
+  transform: translateY(-5px);
+}
+
+/* ====== CONTACTO ====== */
+#contacto {
+  padding: 80px 20px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#contacto .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+#contacto .grid div {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+#contacto a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: var(--primary);
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#contacto a:hover {
+  background: var(--accent);
+  color: var(--dark);
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
