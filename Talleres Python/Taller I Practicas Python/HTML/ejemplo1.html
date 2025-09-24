@@ -1,0 +1,281 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML5 para que el navegador interprete correctamente la página -->
+<html lang="es"> <!-- Raíz del documento; atributo lang define el idioma principal de la página (español) -->
+<head> <!-- Sección de metadatos no visibles directamente en el contenido principal -->
+  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 para soportar acentos y caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala y ancho responsivo en dispositivos móviles -->
+  <title>Mi primera página web</title> <!-- Título que aparece en la pestaña del navegador y en resultados de búsqueda -->
+  <meta name="description" content="Página de ejemplo con los conceptos básicos de HTML5 y ejemplos de etiquetas."> <!-- Descripción breve para SEO -->
+  <meta name="keywords" content="HTML5, etiquetas, ejemplos, tutorial, básico"> <!-- Palabras clave (algunos buscadores aún las leen) -->
+  <meta name="author" content="Tu Nombre"> <!-- Autor del documento -->
+  <meta name="robots" content="index,follow"> <!-- Indica a los motores de búsqueda que indexen y sigan los enlaces -->
+  <meta name="theme-color" content="#ffffff"> <!-- Color del tema en navegadores móviles (barra superior) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Icono de la pestaña del navegador (favicon) -->
+  <link rel="stylesheet" href="estilos_completos.css">  <!-- CSS EXTERNO (comentado porque se solicitó sin CSS)
+  <link rel="canonical" href="https://ejemplo.com/mi-primera-pagina"> <!-- URL canónica para evitar contenido duplicado en SEO -->
+  <meta property="og:title" content="Mi primera página web"> <!-- Etiqueta Open Graph: título para compartir en redes -->
+  <meta property="og:description" content="Conceptos básicos de HTML5 con ejemplos y comentarios."> <!-- Open Graph: descripción -->
+  <meta property="og:type" content="website"> <!-- Open Graph: tipo de recurso compartido -->
+  <meta property="og:url" content="https://ejemplo.com/mi-primera-pagina"> <!-- Open Graph: URL de la página -->
+  <meta property="og:image" content="https://ejemplo.com/imagen-og.png"> <!-- Open Graph: imagen de vista previa -->
+  <meta name="application-name" content="Demo HTML5"> <!-- Nombre corto de la aplicación/sitio -->
+  <meta name="generator" content="Editor de Texto"> <!-- Herramienta utilizada para generar/editar el documento -->
+  <noscript>Tu navegador tiene JavaScript deshabilitado; algunas interacciones no funcionarán.</noscript> <!-- Mensaje alterno si JS no está habilitado -->
+</head> <!-- Fin de la sección de metadatos -->
+<body> <!-- Cuerpo del documento, contiene el contenido visible e interactivo -->
+  <header> <!-- Encabezado de la página; suele contener logotipo, título y navegación principal -->
+    <h1>Mi sitio de ejemplo HTML5</h1> <!-- Encabezado principal del sitio -->    
+    <nav aria-label="Menú principal"> <!-- Barra de navegación principal con etiqueta semántica nav -->
+      <ul> <!-- Lista desordenada de opciones del menú -->
+        <li><a href="#basicos">Básicos</a></li> <!-- Enlace de navegación interno a la sección de básicos -->
+        <li><a href="#texto">Texto</a></li> <!-- Enlace interno a la sección de texto -->
+        <li><a href="#listas-tablas">Listas y tablas</a></li> <!-- Enlace a listas y tablas -->
+        <li><a href="#imagenes-medios">Imágenes y medios</a></li> <!-- Enlace a multimedia -->
+        <li><a href="#formularios">Formularios</a></li> <!-- Enlace a formularios -->
+        <li><a href="#semantica">Semántica</a></li> <!-- Enlace a semántica -->
+        <li><a href="#interactivo">Interactivo</a></li> <!-- Enlace a elementos interactivos -->
+        <li><a href="#otros">Otros</a></li> <!-- Enlace a otras etiquetas útiles -->
+        <li><a href="#contacto">Contacto</a></li> <!-- Enlace a sección de contacto -->
+      </ul> <!-- Fin de la lista del menú -->
+    </nav> <!-- Fin de la navegación principal -->
+    <hr> <!-- Regla horizontal para separar visualmente el header del resto del contenido -->
+  </header> <!-- Fin del encabezado -->
+
+  <main> <!-- Contenido principal único del documento -->
+    <section id="basicos"> <!-- Sección: conceptos básicos -->
+      <h2>Encabezados y parrafos</h2> <!-- Título de la sección -->
+      <p>Los encabezados van de h1 a h6 y los párrafos se marcan con &lt;p&gt;.</p> <!-- Explicación de encabezados y párrafos -->
+      <h1>Ejemplo H1</h1> <!-- Encabezado de nivel 1 (máxima importancia dentro del contenido) -->
+      <h2>Ejemplo H2</h2> <!-- Encabezado de nivel 2 -->
+      <h3>Ejemplo H3</h3> <!-- Encabezado de nivel 3 -->
+      <h4>Ejemplo H4</h4> <!-- Encabezado de nivel 4 -->
+      <h5>Ejemplo H5</h5> <!-- Encabezado de nivel 5 -->
+      <h6>Ejemplo H6</h6> <!-- Encabezado de nivel 6 (mínima importancia) -->
+      <p>Este es un párrafo de ejemplo que demuestra el uso de texto corrido.</p> <!-- Párrafo de demostración -->
+      <addres>Contacto: Calle 123, Ciudad. Email: ejemplo@correo.com</address> <!-- Información de contacto con etiqueta semántica address -->
+      <!-- NOTA: La etiqueta <center> está obsoleta; se usa CSS para centrar. No se incluye CSS por requerimiento. -->
+    </section> <!-- Fin de la sección básicos -->
+
+    <section id="texto"> <!-- Sección: elementos de texto y semántica de línea -->
+      <h2>Elementos de texto y semántica</h2> <!-- Título de la sección -->
+      <p><strong>strong</strong> resalta importancia y <em>em</em> enfatiza el texto.</p> <!-- Ejemplo de strong y em -->
+      <p><b>b</b> (negrita no semántica) y <i>i</i> (cursiva no semántica) aún existen.</p> <!-- Ejemplo de b e i sin significado semántico -->
+      <p><small>small</small> para notas pequeñas, <mark>mark</mark> para resaltar y <s>texto tachado</s> para contenido no vigente.</p> <!-- Ejemplos de small, mark y s -->
+      <p>El elemento <abbr title="HyperText Markup Language">HTML</abbr> usa <dfn>definiciones</dfn> precisas.</p> <!-- Ejemplo de abbr y dfn -->
+      <p>Una <cite>cita de obra</cite> se complementa con una cita corta: <q>ser o no ser</q>.</p> <!-- Ejemplo de cite y q -->
+      <blockquote cite="https://ejemplo.com/fuente"> <!-- Cita en bloque con URL de la fuente -->
+        Este es un bloque de cita que puede ocupar varias líneas. <!-- Contenido de la cita -->
+      </blockquote> <!-- Fin de blockquote -->
+      <p>Variables como <var>x</var>, entrada del usuario <kbd>Ctrl</kbd>+<kbd>C</kbd> y salida <samp>Resultado OK</samp>.</p> <!-- Ejemplo de var, kbd y samp -->
+      <p>Uso de <code>&lt;code&gt;</code> para código en línea y salto recomendado<wbr>con<wbr>wbr.</p> <!-- Ejemplo de code y wbr (punto de quiebre) -->
+      <p>Texto <sub>subíndice</sub> y <sup>superíndice</sup>, así como <u>subrayado</u> y <ins>insertado</ins> vs <del>eliminado</del>.</p> <!-- Ejemplo de sub, sup, u, ins, del -->
+      <p>Dato con valor: <data value="12345">Producto #12345</data> y fecha/hora <time datetime="2025-08-15">15 de agosto de 2025</time>.</p> <!-- Ejemplo de data y time -->
+      <p>Direccionalidad: <bdo dir="rtl">Texto al revés</bdo> y aislamiento <bdi>اسم</bdi>.</p> <!-- Ejemplo de bdo (dirección) y bdi (aislar texto) -->
+      <p>Hola&nbsp;&nbsp;mundo</p><!--Espacio múltiple (no colapsado) con &nbsp;-->
+      <pre>Hola     mundo</pre> <!--Controlar con etiqueta <pre>, Esto mantiene todos los espacios escritos en el código.-->
+    </section> <!-- Fin sección texto -->
+
+    <section id="listas-tablas"> <!-- Sección: listas y tablas -->
+      <h2>Listas y tablas</h2> <!-- Título de la sección -->
+      <h3>Listas</h3> <!-- Subtítulo para listas -->
+      <ul> <!-- Lista desordenada -->
+        <li>Elemento A</li> <!-- Elemento de la lista -->
+        <li>Elemento B</li> <!-- Elemento de la lista -->
+      </ul> <!-- Fin de lista desordenada -->
+      <ol type="1" start="3"> <!-- Lista ordenada con inicio en 3 -->
+        <li>Paso 3</li> <!-- Elemento numerado -->
+        <li>Paso 4</li> <!-- Elemento numerado -->
+      </ol> <!-- Fin de lista ordenada -->
+      <dl> <!-- Lista de definiciones -->
+        <dt>Término</dt> <!-- Término a definir -->
+        <dd>Definición del término.</dd> <!-- Definición correspondiente -->
+      </dl> <!-- Fin de lista de definiciones -->
+      <h3>Tabla</h3> <!-- Subtítulo para tabla -->
+      <table border = "1"> <!-- Tabla básica -->
+        <caption>Tabla de ejemplo</caption> <!-- Título/leyenda de la tabla -->
+        <colgroup> <!-- Grupo de columnas para meta-información -->
+          <col span="1"> <!-- Primera columna (sin estilos por requerimiento) -->
+          <col span="1"> <!-- Segunda columna -->
+        </colgroup> <!-- Fin del grupo de columnas -->
+        <thead> <!-- Cabecera de la tabla -->
+          <tr> <!-- Fila de cabecera -->
+            <th>Nombre</th> <!-- Encabezado de columna -->
+            <th>Valor</th> <!-- Encabezado de columna -->
+          </tr> <!-- Fin de fila de cabecera -->
+        </thead> <!-- Fin de thead -->
+        <tbody> <!-- Cuerpo de la tabla -->
+          <tr> <!-- Fila de datos -->
+            <td>Item 1</td> <!-- Celda normal -->
+            <td>100</td> <!-- Celda normal -->
+          </tr> <!-- Fin de fila -->
+          <tr> <!-- Otra fila -->
+            <td>Item 2</td> <!-- Celda normal -->
+            <td>200</td> <!-- Celda normal -->
+          </tr> <!-- Fin de fila -->
+        </tbody> <!-- Fin de tbody -->
+        <tfoot> <!-- Pie de tabla -->
+          <tr> <!-- Fila de pie -->
+            <td>Total</td> <!-- Celda normal -->
+            <td>300</td> <!-- Celda normal -->
+          </tr> <!-- Fin de fila -->
+        </tfoot> <!-- Fin de tfoot -->
+      </table> <!-- Fin de la tabla -->
+    </section> <!-- Fin sección listas y tablas -->
+
+    <section id="imagenes-medios"> <!-- Sección: imágenes y medios -->
+      <h2>Imágenes y multimedia</h2> <!-- Título de la sección -->
+      <figure> <!-- Contenedor semántico para medios con leyenda -->
+        <img src="imagen.jpg" alt="Descripción de la imagen"> <!-- Imagen con atributo alt para accesibilidad -->
+        <figcaption>Ejemplo de imagen con figcaption.</figcaption> <!-- Leyenda de la figura -->
+      </figure> <!-- Fin de figure -->
+      <picture> <!-- Contenedor para imágenes responsivas -->
+        <source srcset="imagen.webp" type="image/webp"> <!-- Fuente alternativa WebP -->
+        <source srcset="imagen.jpg" type="image/jpeg"> <!-- Fuente alternativa JPEG -->
+        <img src="imagen.jpg" alt="Imagen responsive"> <!-- Imagen de respaldo si no se soportan las fuentes anteriores -->
+      </picture> <!-- Fin de picture -->
+      <video controls width="320" poster="poster.jpg"> <!-- Video con controles, ancho fijo y miniatura -->
+        <source src="video.mp4" type="video/mp4"> <!-- Fuente MP4 del video -->
+        <track kind="captions" src="subtitulos.vtt" srclang="es" label="Español"> <!-- Pista de subtítulos -->
+        Tu navegador no soporta video HTML5. <!-- Texto alternativo si el navegador no soporta video -->
+      </video> <!-- Fin de video -->
+      <audio controls> <!-- Reproductor de audio con controles -->
+        <source src="audio.mp3" type="audio/mpeg"> <!-- Fuente MP3 del audio -->
+        Tu navegador no soporta audio HTML5. <!-- Mensaje alternativo -->
+      </audio> <!-- Fin de audio -->
+      <iframe src="https://example.com" title="Marco embebido de ejemplo"></iframe> <!-- Marco embebido con título accesible -->
+      <map name="mapa-ejemplo"> <!-- Mapa de imagen para áreas clicables -->
+        <area shape="rect" coords="0,0,100,100" href="#basicos" alt="Ir a básicos"> <!-- Área clicable rectangular -->
+      </map> <!-- Fin del mapa de imagen -->
+      <img src="imagen-mapa.jpg" alt="Imagen con mapa" usemap="#mapa-ejemplo"> <!-- Imagen que usa el mapa definido -->
+      <svg width="120" height="60" role="img" aria-label="Rectángulo SVG"> <!-- Gráfico SVG embebido como ejemplo -->
+        <rect x="10" y="10" width="100" height="40"></rect> <!-- Rectángulo simple en SVG -->
+      </svg> <!-- Fin de SVG -->
+      <canvas id="lienzo" width="120" height="60">Tu navegador no soporta canvas.</canvas> <!-- Lienzo para gráficos con JS -->
+    </section> <!-- Fin sección imágenes y medios -->
+    <section id="formularios"> <!-- Sección: formularios y controles -->
+      <h2>Formularios (HTML5)</h2> <!-- Título de la sección -->
+      <form action="/procesar" method="post" autocomplete="on"> <!-- Formulario que envía datos por POST con autocompletado -->
+        <fieldset> <!-- Agrupa controles relacionados -->
+          <legend>Datos personales</legend> <!-- Título del grupo de campos -->
+          <label for="nombre">Nombre:</label> <!-- Etiqueta descriptiva asociada a un control -->
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required> <!-- Campo de texto requerido con placeholder -->
+          <br> <!-- Salto de línea simple sin usar CSS -->
+          <label for="email">Correo:</label> <!-- Etiqueta para el correo -->
+          <input id="email" name="email" type="email" placeholder="tucorreo@dominio.com" required> <!-- Campo email con validación nativa -->
+          <br> <!-- Salto de línea -->
+          <label for="url">Sitio web:</label> <!-- Etiqueta para URL -->
+          <input id="url" name="url" type="url" placeholder="https://"> <!-- Campo URL con validación -->
+          <br> <!-- Salto de línea -->
+          <label for="tel">Teléfono:</label> <!-- Etiqueta para teléfono -->
+          <input id="tel" name="tel" type="tel" pattern="[0-9+\s-]{7,}" placeholder="+57 300 000 0000"> <!-- Campo tel con patrón -->
+          <br> <!-- Salto de línea -->
+          <label for="pass">Contraseña:</label> <!-- Etiqueta para contraseña -->
+          <input id="pass" name="pass" type="password" minlength="6" required> <!-- Campo password con longitud mínima -->
+          <br> <!-- Salto de línea -->
+          <label for="nacimiento">Fecha de nacimiento:</label> <!-- Etiqueta para fecha -->
+          <input id="nacimiento" name="nacimiento" type="date"> <!-- Selector de fecha -->
+          <br> <!-- Salto de línea -->
+          <label for="hora">Hora:</label> <!-- Etiqueta para hora -->
+          <input id="hora" name="hora" type="time"> <!-- Selector de hora -->
+          <br> <!-- Salto de línea -->
+          <label for="color">Color favorito:</label> <!-- Etiqueta para color -->
+          <input id="color" name="color" type="color" value="#0000ff"> <!-- Selector de color con valor por defecto -->
+          <br> <!-- Salto de línea -->
+          <label for="numero">Número (1-10):</label> <!-- Etiqueta para número -->
+          <input id="numero" name="numero" type="number" min="1" max="10" step="1"> <!-- Campo numérico con límites -->
+          <br> <!-- Salto de línea -->
+          <label for="rango">Rango:</label> <!-- Etiqueta para rango -->
+          <input id="rango" name="rango" type="range" min="0" max="100" value="50"> <!-- Control tipo slider -->
+          <br> <!-- Salto de línea -->
+          <label for="buscar">Buscar:</label> <!-- Etiqueta para búsqueda -->
+          <input id="buscar" name="buscar" type="search" placeholder="Buscar..."> <!-- Campo de búsqueda -->
+          <br> <!-- Salto de línea -->
+          <label for="archivo">Archivo:</label> <!-- Etiqueta para archivo -->
+          <input id="archivo" name="archivo" type="file"> <!-- Selector de archivo -->
+          <br> <!-- Salto de línea -->
+          <label for="lista">País:</label> <!-- Etiqueta para lista con datalist -->
+          <input id="lista" name="pais" list="paises" placeholder="Escribe o elige"> <!-- Input con lista sugerida -->
+          <datalist id="paises"> <!-- Lista de opciones sugeridas -->
+            <option value="Colombia"></option> <!-- Opción disponible -->
+            <option value="México"></option> <!-- Opción disponible -->
+            <option value="España"></option> <!-- Opción disponible -->
+          </datalist> <!-- Fin del datalist -->
+          <br> <!-- Salto de línea -->
+          <label for="textarea">Comentario:</label> <!-- Etiqueta para textarea -->
+          <textarea id="textarea" name="comentario" rows="3" cols="30" placeholder="Escribe aquí..."></textarea> <!-- Área de texto multilínea -->
+          <br> <!-- Salto de línea -->
+          <label for="select">Selecciona una opción:</label> <!-- Etiqueta para select -->
+          <select id="select" name="opcion"> <!-- Menú desplegable -->
+            <optgroup label="Grupo 1"> <!-- Grupo de opciones -->
+              <option value="1">Opción 1</option> <!-- Opción 1 -->
+              <option value="2">Opción 2</option> <!-- Opción 2 -->
+            </optgroup> <!-- Fin del grupo -->
+            <optgroup label="Grupo 2"> <!-- Segundo grupo -->
+              <option value="3">Opción 3</option> <!-- Opción 3 -->
+            </optgroup> <!-- Fin del grupo -->
+          </select> <!-- Fin de select -->
+          <br> <!-- Salto de línea -->
+          <label><input type="checkbox" name="acepto" required> Acepto términos</label> <!-- Casilla de verificación requerida -->
+          <br> <!-- Salto de línea -->
+          <label><input type="radio" name="genero" value="m"> Masculino</label> <!-- Botón de opción -->
+          <label><input type="radio" name="genero" value="f"> Femenino</label> <!-- Botón de opción -->
+          <br> <!-- Salto de línea -->
+          <meter min="0" max="100" value="60">60%</meter> <!-- Indicador de medida con valor actual -->
+          <progress max="100" value="30"></progress> <!-- Barra de progreso con avance actual -->
+          <br> <!-- Salto de línea -->
+          <label for="calculo">Calcular (a+b):</label> <!-- Etiqueta para cálculo -->
+          <input id="a" type="number" value="2"> <!-- Primer número para cálculo -->
+          <input id="b" type="number" value="3"> <!-- Segundo número para cálculo -->
+          <output id="calculo" for="a b">5</output> <!-- Salida del cálculo (se puede actualizar con JS) -->
+          <br> <!-- Salto de línea -->
+          <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+          <button type="reset">Limpiar</button> <!-- Botón para reiniciar los campos -->
+        </fieldset> <!-- Fin del fieldset -->
+      </form> <!-- Fin del formulario -->
+      <form method="dialog"> <!-- Formulario especial para usarse con diálogos (cerrar/confirmar) -->
+        <button>Botón de ejemplo para dialog</button> <!-- Botón que cierra un dialog en contexto de <dialog> -->
+      </form> <!-- Fin del formulario de dialog -->
+    </section> <!-- Fin sección formularios -->
+
+    <section id="semantica"> <!-- Sección: estructura semántica -->
+      <h2>Estructura semántica</h2> <!-- Título de la sección -->
+      <article> <!-- Artículo independiente que podría ser distribuido de forma autónoma -->
+        <header> <!-- Encabezado del artículo -->
+          <h3>Título del artículo</h3> <!-- Título del artículo -->
+          <p><time datetime="2025-08-15">15/08/2025</time> · <span>Autor: Ana</span></p> <!-- Metadatos del artículo -->
+        </header> <!-- Fin del encabezado del artículo -->
+        <section> <!-- Sub-sección del artículo -->
+          <p>Este es el contenido principal del artículo con su contexto.</p> <!-- Párrafo de contenido -->
+        </section> <!-- Fin de la sub-sección -->
+        <aside>Contenido relacionado o nota al margen del artículo.</aside> <!-- Contenido auxiliar relacionado -->
+        <footer>Fin del artículo con enlaces y referencias.</footer> <!-- Pie del artículo -->
+      </article> <!-- Fin del artículo -->
+    </section> <!-- Fin sección semántica -->    
+
+    <section id="otros"> <!-- Sección: otras etiquetas útiles -->
+      <h2>Otros elementos útiles</h2> <!-- Título de la sección -->
+      <p>Enlace externo: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></p> <!-- Enlace con atributos de seguridad al abrir nueva pestaña -->
+      <p>Enlace interno a <a href="#contacto">Contacto</a>.</p> <!-- Enlace dentro de la misma página -->
+      <hr> <!-- Regla horizontal como separador temático -->
+      <p>Comentario HTML no visible en el render (este es visible aquí por ser texto, el real se escribe con &lt;!-- --&gt;).</p> <!-- Explicación sobre comentarios -->
+    </section> <!-- Fin de la sección otros -->
+
+    <section id="contacto"> <!-- Sección: información de contacto -->
+      <h2>Contacto</h2> <!-- Título de la sección de contacto -->
+      <address> <!-- Bloque de información de contacto -->
+        Escribe a <a href="mailto:ejemplo@correo.com">ejemplo@correo.com</a> o llama al <a href="tel:+573000000000">+57 300 000 0000</a>. <!-- Links de mailto y tel -->
+      </address> <!-- Fin de address -->
+    </section> <!-- Fin de la sección de contacto -->
+  </main> <!-- Fin del contenido principal -->
+
+  <footer> <!-- Pie de página del sitio -->
+    <p>Derechos reservados &copy; 2025</p> <!-- Aviso de derechos de autor con entidad HTML -->
+    <nav aria-label="Enlaces del pie"> <!-- Navegación secundaria en el pie -->
+      <a href="#basicos">Básicos</a> <!-- Enlace rápido a la sección básicos -->
+      | <!-- Separador visual simple -->
+      <a href="#formularios">Formularios</a> <!-- Enlace rápido a formularios -->
+      | <!-- Separador visual simple -->
+      <a href="#contacto">Contacto</a> <!-- Enlace rápido a contacto -->
+    </nav> <!-- Fin de la navegación del pie -->
+  </footer> <!-- Fin del pie de página -->
+</body> <!-- Fin del cuerpo del documento -->
+</html> <!-- Fin del documento HTML -->
